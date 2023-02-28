@@ -1,28 +1,126 @@
-.start-body{
+.start-body {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
+    background: rgb(234, 240, 255);
+    background: linear-gradient(0deg, rgba(234, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-.bet{
+.bet {
     justify-content: space-between;
+    padding-top: 20px;
 }
 
-.img-container{
+.img-container {
+    z-index: 10;
     height: 100%;
     display: flex;
     align-items: flex-end;
 }
 
-.flex{
+.flex {
     display: flex;
-    align-items: center;   
+    align-items: center;
+
 }
 
-.start-img{
-    height: calc(100% - 50px);
+.flex-only {
+    display: flex;
+    justify-content: space-between;
 }
 
-.my-img-header{    
-    width: 750px;   
+.start-img {
+    height: calc(100% - 86px);
+
+}
+
+.my-img-header {
+    width: 40vw;
+    margin-left: 40px;
+}
+
+.first-blue-ball {
+    z-index: 9;
+    width: 900px;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+
+.header-text {
+    z-index: 10;
+
+    p {
+        margin: 0;
+        font-size: 40px;
+    }
+
+}
+
+.header-links {
+    z-index: 10;
+
+    a {
+        color: #5988FF;
+        font-size: 23px;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+.posi-header-text {
+    margin-top: 100px;
+    z-index: 10;
+    
+    h1 {      
+        color: #5988FF;
+        line-height: 100%;
+        margin: 0;
+        font-size: 7.6vw;
+        font-weight: 400;
+    }
+
+    p {   
+        color: #5988FF;
+        font-family: 'Montserrat';
+        margin: 0;
+        font-size: 3.3vw;
+        font-weight: 400;
+    }
+}
+
+.scroll-icon{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    span{
+        font-family: 'Montserrat';
+        font-size: 23px;
+        color: #5988FF;
+    }
+}
+
+.social-main{
+    display: flex;
+    height: 46.7%;
+}
+
+.social-left{
+    width: 50%;
+    border-right: #5988FF solid;
+}
+
+.social-header{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    img{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 30px;
+    }
 }
