@@ -35,7 +35,7 @@
 }
 
 .my-img-header {
-    width: 40vw;
+    width: 600px;
     margin-left: 40px;
 }
 
@@ -59,7 +59,6 @@
 
 .header-links {
     z-index: 10;
-
     a {
         color: #5988FF;
         font-size: 23px;
@@ -71,14 +70,14 @@
 }
 
 .posi-header-text {
-    margin-top: 100px;
+    margin-top: 80px;
     z-index: 10;
     
     h1 {      
         color: #5988FF;
         line-height: 100%;
         margin: 0;
-        font-size: 7.6vw;
+        font-size: 128px;
         font-weight: 400;
     }
 
@@ -86,7 +85,7 @@
         color: #5988FF;
         font-family: 'Montserrat';
         margin: 0;
-        font-size: 3.3vw;
+        font-size: 64px;
         font-weight: 400;
     }
 }
@@ -104,12 +103,12 @@
 
 .social-main{
     display: flex;
-    height: 46.7%;
+    height: 175px;
 }
 
 .social-left{
     width: 50%;
-    border-right: 4px #5988FF solid;
+    border-right: 3px #5988FF solid;
 }
 
 .social-header{
