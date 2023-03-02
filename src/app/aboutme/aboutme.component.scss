@@ -12,6 +12,7 @@
 
 .my-description{
     display: flex;
+    
 
 }
 
@@ -25,7 +26,20 @@
 
 .my-image{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image-radius{
+width: 200px;
+height: 200px;
     img{
+        height: 200px;
         width: 200px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 4px solid #5988FF;
     }
 }
