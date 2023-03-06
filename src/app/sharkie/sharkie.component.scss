@@ -1,0 +1,30 @@
+.work-main{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 150px;
+}
+
+.work-text{
+    margin-left: 88px;
+    margin-right: 88px;
+    display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    h3{
+        font-size: 45px;
+        color: #5988FF;
+        text-align: end;
+    }
+    span{
+        color: #5988FF;
+        font-size: 23px;
+        font-family: 'Montserrat';
+        text-align: end;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Montserrat';
+        text-align: end;
+    }
+   
+}
