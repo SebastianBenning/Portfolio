@@ -1,0 +1,79 @@
+.contact-main {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(234, 240, 255);
+    background: linear-gradient(0deg, rgba(234, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.contact-text {
+    h2 {
+        font-size: 90px;
+        color: #5988FF;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-family: 'Montserrat';
+        font-size: 38px;
+        font-weight: 700;
+        color: #5988FF;
+    }
+
+    span {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    p {
+        color: #5988FF;
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
+
+.contact-input {
+    margin-top: 280px;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 617px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #5988FF;
+        margin: 15px 25px;
+    }
+    textarea{
+    margin: 15px 25px;
+    max-width: 617px;
+    min-width: 617px;
+    min-height: 200px;
+    border: 1px solid #5988FF;
+    border-radius: 10px;
+    }
+    button{
+        margin-top: 30px;
+        width: 150px;
+        height: 50px;
+        font-family: 'Montserrat';
+        font-size: 23px;
+        color: #5988FF;
+        border: 2px solid #5988FF;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+}
+
+.contact-bigball{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 204px;
+    }
+}
