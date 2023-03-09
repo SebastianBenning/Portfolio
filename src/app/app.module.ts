@@ -9,6 +9,7 @@ import { SkillsetComponent } from './skillset/skillset.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { JoinComponent } from './join/join.component';
 import { SharkieComponent } from './sharkie/sharkie.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SharkieComponent } from './sharkie/sharkie.component';
     SkillsetComponent,
     MyworkComponent,
     JoinComponent,
-    SharkieComponent
+    SharkieComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
