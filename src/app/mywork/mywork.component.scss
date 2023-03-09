@@ -1,7 +1,6 @@
 .my-work {
     margin-top: 100px;
     margin-bottom: 100px;
-
     h2 {
         font-size: 96px;
         font-weight: 400;
@@ -27,4 +26,22 @@
     position: absolute;
     right: 150px;
     top: 2650px;
+}
+
+.half-ball-left{
+    width: 390px;
+    position: absolute;
+    left: -195px;
+}
+
+
+
+@media (max-width:1600px){
+    .small-ball{
+        top: 2250px;
+    }
+    .big-ball{
+        top: 2450px;
+    }
+    
 }

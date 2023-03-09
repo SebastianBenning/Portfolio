@@ -35,8 +35,9 @@
 }
 
 .my-img-header {
-    width: 750px;
+    height: 100%;
     margin-left: 40px;
+    
 }
 
 .first-blue-ball {
@@ -72,7 +73,7 @@
 .posi-header-text {
     margin-top: 80px;
     z-index: 10;
-    
+    height: calc(100% - 80px);
     h1 {      
         color: #5988FF;
         line-height: 100%;
@@ -102,18 +103,20 @@
 }
 
 .social-main{
-    
-    display: flex;
-    height: 330px;
+    display: flex; 
+    height: 43.5%;
+    overflow: auto;
 }
 
 .social-left{
     width: 50%;
     border-right: 3px #5988FF solid;
+    
 }
 
 .social-header{
     width: 50%;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -123,4 +126,18 @@
         margin-bottom: 12px;
         width: 30px;
     }
+}
+
+@media (max-width:1600px) {
+    .posi-header-text { 
+        h1 {          
+            font-size: 100px;   
+        }
+    
+        p {    
+            font-size: 44px;   
+        }
+    }
+
+    
 }

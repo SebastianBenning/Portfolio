@@ -1,0 +1,38 @@
+.footer-main {
+    background: rgb(90, 136, 255);
+    background: linear-gradient(120deg, rgba(90, 136, 255, 1) 0%, rgba(18, 81, 241, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.footer-impres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

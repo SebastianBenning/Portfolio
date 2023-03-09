@@ -10,6 +10,7 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { JoinComponent } from './join/join.component';
 import { SharkieComponent } from './sharkie/sharkie.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     MyworkComponent,
     JoinComponent,
     SharkieComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

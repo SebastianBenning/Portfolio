@@ -11,6 +11,9 @@
 body {
     margin: 0;
     font-family: 'Baloo', Arial, Helvetica, sans-serif;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
