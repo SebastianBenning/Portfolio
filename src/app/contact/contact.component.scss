@@ -1,10 +1,10 @@
 .contact-main {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.contact-background{
+.contact-background {
     background: rgb(234, 240, 255);
     background: linear-gradient(0deg, rgba(234, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
@@ -39,6 +39,7 @@
 
 .contact-input {
     margin-top: 280px;
+
     form {
         display: flex;
         flex-direction: column;
@@ -51,38 +52,94 @@
         border-radius: 10px;
         border: 1px solid #5988FF;
         margin: 15px 25px;
-    }
-    textarea{
-    margin: 15px 25px;
-    max-width: 617px;
-    min-width: 617px;
-    min-height: 200px;
-    border: 1px solid #5988FF;
-    border-radius: 10px;
-    }
-    button{
-        margin-top: 30px;
-        width: 150px;
-        height: 50px;
         font-family: 'Montserrat';
-        font-size: 23px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    textarea {
+        margin: 15px 25px;
+        max-width: 617px;
+        min-width: 617px;
+        min-height: 200px;
+        border: 1px solid #5988FF;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+}
+
+.button-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    button {
+        margin-top: 20px;
+        height: 45px;
+        width: 180px;
+        border-radius: 10px;
+        font-size: 20px;
         color: #5988FF;
         border: 2px solid #5988FF;
-        border-radius: 10px;
+        cursor: pointer;
         background-color: transparent;
+        position: relative;
+        transition: all 0.2s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 0%;
+            border-radius: 8px;
+            background: rgb(90, 136, 255);
+            background: linear-gradient(120deg, rgba(90, 136, 255, 1) 0%, rgba(18, 81, 241, 1) 100%);
+            transition: all 0.2s;
+            z-index: -1;
+        }
+
+        &:hover:before {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            color: white;
+            width: 190px;
+            height: 55px;
+            z-index: 0;
+        }
     }
 }
 
-.contact-bigball{
+.contact-bigball {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    margin-top: 37px;
+    img {
         width: 204px;
     }
 }
 
-.goup-image{
+.goup-image {
+    width: 39px;
+    height: 39px;
+    background: url("/assets/img/goup.png");
+    background-repeat: no-repeat;
     margin-top: 50px;
     padding-bottom: 50px;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+        background: url("/assets/img/up.png");
+        background-repeat: no-repeat;
+    }
+
 }

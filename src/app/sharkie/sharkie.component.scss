@@ -1,33 +1,44 @@
-.work-main{
+.work-main {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     margin-top: 150px;
-    
+
 }
 
-.work-text{
+.button-join {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.work-text {
     margin-left: 88px;
     margin-right: 88px;
     display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    h3{
+    align-items: flex-end;
+    flex-direction: column;
+
+    h3 {
         font-size: 45px;
         color: #5988FF;
         text-align: end;
     }
-    span{
+
+    span {
         color: #5988FF;
         font-size: 23px;
         font-family: 'Montserrat';
         text-align: end;
     }
-    p{
+
+    p {
         font-size: 16px;
         font-family: 'Montserrat';
         text-align: end;
     }
-    button{
+
+    button {
         margin-top: 20px;
         width: 150px;
         height: 50px;
@@ -39,6 +50,7 @@
         background-color: transparent;
         position: relative;
         transition: all 0.2s;
+
         &:before {
             content: "";
             position: absolute;
@@ -51,28 +63,34 @@
             background: linear-gradient(120deg, rgba(90, 136, 255, 1) 0%, rgba(18, 81, 241, 1) 100%);
             transition: all 0.2s;
             z-index: -1;
-            
+
         }
-        &:hover:before{
+
+        &:hover:before {
             width: 100%;
             height: 100%;
-        }  
-        &:hover{
+        }
+
+        &:hover {
             color: white;
             width: 190px;
             height: 55px;
-        }  
+        }
     }
-   
+
 }
 
-.image-work{
-    box-shadow: 5px 5px 12px -6px rgba(0,0,0,0.66);
+.image-work {
+    box-shadow: 5px 5px 12px -6px rgba(0, 0, 0, 0.66);
     position: relative;
     z-index: 99;
+    transition: all 0.2s;
+    &:hover{
+        scale: (1.1);
+    }
 }
 
-.half-ball-right{
+.half-ball-right {
     overflow: hidden;
     width: 650px;
     position: absolute;
