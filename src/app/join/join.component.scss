@@ -1,40 +1,44 @@
-.work-main{
+.work-main {
     display: flex;
     align-items: flex-end;
-    
+
 }
 
-.button-join{
+.button-join {
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-.work-text{ 
+.work-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 88px;
     z-index: 12;
-    h3{
+
+    h3 {
         margin-top: 30px;
         font-size: 45px;
         color: #5988FF;
     }
-    span{
+
+    span {
         color: #5988FF;
         font-size: 23px;
         font-family: 'Montserrat';
-        
+
     }
-    p{
+
+    p {
         font-size: 16px;
         font-family: 'Montserrat';
         margin: 0;
         margin-top: 15px;
         margin-bottom: 30px;
     }
-    button{
+
+    button {
         width: 150px;
         height: 50px;
         font-family: 'Montserrat';
@@ -45,6 +49,7 @@
         background-color: transparent;
         position: relative;
         transition: all 0.2s;
+
         &:before {
             content: "";
             position: absolute;
@@ -57,24 +62,65 @@
             background: linear-gradient(120deg, rgba(90, 136, 255, 1) 0%, rgba(18, 81, 241, 1) 100%);
             transition: all 0.2s;
             z-index: -1;
-            
+
         }
-        &:hover:before{
+
+        &:hover:before {
             width: 100%;
             height: 100%;
-        }  
-        &:hover{
+        }
+
+        &:hover {
             color: white;
             width: 190px;
             height: 55px;
-        }  
+        }
     }
 }
 
-.image-work{
-    box-shadow: 5px 5px 12px -6px rgba(0,0,0,0.66);
+.image-work {
+    z-index: 10;
+    box-shadow: 5px 5px 12px -6px rgba(0, 0, 0, 0.66);
     transition: all 0.2s;
-    &:hover{
+
+    &:hover {
         scale: (1.1);
+    }
+}
+
+@media (max-width:1100px) {
+
+    .work-main {
+        width: 100vw;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 150px;
+    }
+
+    .work-text {
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .image-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media (max-width:650px) {
+    .image-work {
+        width: 90%;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
     }
 }

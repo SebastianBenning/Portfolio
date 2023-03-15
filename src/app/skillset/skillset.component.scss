@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
+    flex-wrap: wrap;
 }
 
 .under_container {
@@ -53,4 +54,11 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
+    flex-wrap: wrap;
+}
+
+@media (max-width:750px){
+    .under_container{
+        margin-top: 0;
+    }
 }

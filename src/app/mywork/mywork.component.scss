@@ -1,6 +1,7 @@
 .my-work {
     margin-top: 100px;
     margin-bottom: 100px;
+    position: relative;
     h2 {
         font-size: 96px;
         font-weight: 400;
@@ -18,30 +19,39 @@
     width: 109px;
     position: absolute;
     left: 563px;
-    top: 2500px;
+    top: 10px;
+    z-index: -1;
 }
 
 .big-ball {
     width: 183px;
     position: absolute;
     right: 150px;
-    top: 2650px;
+    top: 150px;
+    z-index: -1;
 }
 
 .half-ball-left{
+    z-index: -1;
     width: 390px;
     position: absolute;
-    left: -195px;
+    left: -195px;  
+    
 }
 
-
-
-@media (max-width:1600px){
-    .small-ball{
-        top: 2500px;
-    }
-    .big-ball{
-        top: 2650px;
+@media (max-width:1200px){
+    .half-ball-left{
+        top: 3250px;
     }
     
 }
+
+@media (max-width:950px){ 
+    .my-work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+

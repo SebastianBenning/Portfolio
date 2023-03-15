@@ -112,3 +112,32 @@
         }
     }
 }
+
+@media (max-width:1100px){
+    .pointer-ball{
+        z-index: 99;
+        top: calc(100vh - 80px);
+        img{
+            width: 150px;
+        }
+    }
+    .my-image{
+        display: none;
+    }
+    .my-description{
+        justify-content: center;
+    }
+}
+
+@media (max-width:950px){
+    .me-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+}
