@@ -47,6 +47,7 @@
     position: absolute;
     top: -200px;
     left: -200px;
+    overflow: hidden;
 }
 
 .header-text {
@@ -264,5 +265,19 @@
         p{
             font-size: 32px;
         }
+    }
+}
+
+@media (max-width:450px){
+    .flex-only{
+        margin: 0;
+    }
+    .img-container{
+        justify-content: center;
+        img{
+            height: auto;
+            width: 110%;
+        }
+        
     }
 }

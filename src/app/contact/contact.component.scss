@@ -55,6 +55,10 @@
         font-family: 'Montserrat';
         font-size: 16px;
         padding: 10px 20px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 0 1px #5988FF;  
+        }
     }
 
     textarea {
@@ -67,6 +71,10 @@
         font-family: 'Montserrat';
         font-size: 16px;
         padding: 10px 20px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 0 1px #5988FF;   
+        }
     }
 
 }
@@ -155,10 +163,11 @@
         z-index: 9;
         position: absolute;
         left: calc(50vw - 102px);
-        top: 5350px;
+        top: 500px;
     }
 
     .contact-text {
+        position: relative;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -176,11 +185,6 @@
     }
 }
 
-@media (max-width:750px){
-    .contact-bigball{
-        top: 5500px;
-    }
-}
 
 @media (max-width:650px) {
     .contact-input {
@@ -191,7 +195,12 @@
             min-width: 90%;
             
         }
-    }
+    }  
+}
 
-    
+@media (max-width:650px){
+    .contact-bigball {
+        
+        top: 600px;
+    }
 }

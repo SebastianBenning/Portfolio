@@ -52,7 +52,7 @@
         background-color: transparent;
         position: relative;
         transition: all 0.2s;
-        
+        cursor: pointer;
         &:before {
             content: "";
             position: absolute;
@@ -87,13 +87,14 @@
     position: relative;
     z-index: 99;
     transition: all 0.2s;
+    cursor: pointer;
     &:hover{
         scale: (1.1);
     }
 }
 
 .half-ball-right {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 550px;
     position: absolute;
     right: -220px;
@@ -101,17 +102,6 @@
     z-index: 9;
 }
 
-// @media (max-width:1500px){
-//     .half-ball-right{
-//         top: 3300px;
-//     }
-// }
-
-// @media (max-width:1400px){
-//     .half-ball-right{
-//         top: 3500px;
-//     }
-// }
 
 @media (max-width:1100px){
     
@@ -147,6 +137,9 @@
     .img-container{
         display: flex;
         justify-content: center;
+    }
+    .half-ball-right{
+        display: none;
     }
 }
 

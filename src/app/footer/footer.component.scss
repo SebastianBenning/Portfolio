@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     p {
         margin: 0;
         display: flex;
@@ -24,15 +25,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p{
+        color: white;
+        font-size: 23px;
+        font-family: 'Montserrat';
+    }
+    span{
+        color: white;
+        font-size: 16px;
+        font-family: 'Montserrat';
+    }
 }
 
-.footer-social{
+.footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+
+    img {
         height: 30px;
         margin-left: 10px;
         margin-right: 10px;
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover {
+            scale: (1.2);
+        }
     }
 }

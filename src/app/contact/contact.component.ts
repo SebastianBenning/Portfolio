@@ -11,5 +11,13 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onActivate(event:any) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }
+
+

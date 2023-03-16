@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 
+import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
 @Component({
   selector: 'app-aboutme',
   templateUrl: './aboutme.component.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
+    
   }
-
+  goToContact(){
+    this.scroller.scrollToAnchor("contactStart");
+  //  document.getElementById('contactStart')?.scrollIntoView({behavior: "smooth"});
+  }
 }
