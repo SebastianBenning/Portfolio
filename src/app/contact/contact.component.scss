@@ -173,7 +173,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        margin-left: 16px;
+        margin-right: 16px;
         h3 {
             margin-top: 0;
         }
@@ -203,4 +204,16 @@
         
         top: 600px;
     }
+}
+
+@media (max-width:450px){
+    .contact-input {
+        input {
+            width: 80%;
+        }
+        textarea {
+            min-width: 80%;
+            
+        }
+    } 
 }

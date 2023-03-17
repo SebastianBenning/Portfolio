@@ -15,6 +15,6 @@ export class AboutmeComponent implements OnInit {
   }
   goToContact(){
     this.scroller.scrollToAnchor("contactStart");
-  //  document.getElementById('contactStart')?.scrollIntoView({behavior: "smooth"});
+  
   }
 }

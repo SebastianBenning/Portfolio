@@ -103,8 +103,12 @@
     .work-text {
         justify-content: center;
         align-items: center;
-
         margin: 0;
+        p{
+            text-align: left;
+        }
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .image-content {

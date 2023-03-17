@@ -53,3 +53,9 @@
         }
     }
 }
+
+@media (max-width:600px){
+    .footer-main{
+        flex-direction: column;
+    }
+}
