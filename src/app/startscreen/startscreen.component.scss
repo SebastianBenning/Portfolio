@@ -68,8 +68,9 @@
 
 .header-links {
     z-index: 10;
-
-    a {
+    display: flex;
+    cursor: pointer;
+    p {
         color: #5988FF;
         font-size: 23px;
         text-decoration: none;
