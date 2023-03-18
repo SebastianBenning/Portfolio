@@ -43,7 +43,7 @@
 
 }
 
-.overflow{
+.overflow {
     overflow-x: hidden;
     position: absolute;
     top: -200px;
@@ -52,8 +52,69 @@
     z-index: 9;
 }
 
-.first-blue-ball {    
-    width: 900px;   
+.d-none{
+    display: none;
+}
+
+.dnone{
+    display: none;
+}
+
+label.hamburg {
+    z-index: 16;
+    display: block;
+    background: transparent;
+    width: 75px;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input#hamburg {
+    display: none
+}
+
+.line {
+    position: absolute;
+    left: 10px;
+    height: 4px;
+    width: 55px;
+    background: #5988FF;
+    border-radius: 2px;
+    display: block;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.line:nth-child(1) {
+    top: 12px;
+}
+
+.line:nth-child(2) {
+    top: 24px;
+}
+
+.line:nth-child(3) {
+    top: 36px;
+}
+
+// #hamburg:checked+.hamburg .line:nth-child(1) {
+//     transform: translateY(12px) rotate(-45deg);
+// }
+
+// #hamburg:checked+.hamburg .line:nth-child(2) {
+//     opacity: 0;
+// }
+
+// #hamburg:checked+.hamburg .line:nth-child(3) {
+//     transform: translateY(-12px) rotate(45deg);
+// }
+
+.first-blue-ball {
+    width: 900px;
 }
 
 .header-text {
@@ -70,6 +131,7 @@
     z-index: 10;
     display: flex;
     cursor: pointer;
+
     p {
         color: #5988FF;
         font-size: 23px;
@@ -77,7 +139,8 @@
         font-family: 'Montserrat';
         margin-left: 32px;
         margin-right: 32px;
-        &:hover{
+
+        &:hover {
             font-weight: bold;
         }
     }
@@ -127,6 +190,40 @@
     width: 50%;
     border-right: 3px #5988FF solid;
 
+}
+
+.mobile-links{
+    z-index: 15;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 100vh;
+    background: rgb(234, 240, 255);
+    background: linear-gradient(0deg, rgba(234, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    
+}
+
+.animationFadeInRight {
+    animation: fadeInright 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeInright {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .social-header {
@@ -204,6 +301,9 @@
 }
 
 @media (max-width:1200px) {
+    .d-none{
+        display: block;
+    }    
     .img-container {
         z-index: 10;
         height: 100%;
@@ -215,98 +315,112 @@
         }
     }
 
-    .header-links{
+    .header-links {
         display: none;
     }
 }
 
-@media (max-width:1100px){
-    .scroll-icon{
+@media (max-width:1100px) {
+    .scroll-icon {
         display: none;
     }
-    .social-main{
+
+    .social-main {
         display: none;
     }
-    .posi-header-text{
+
+    .posi-header-text {
         height: auto;
-        h1{
+
+        h1 {
             color: white;
             font-size: 100px;
         }
-        p{
+
+        p {
             color: white;
         }
     }
-    .img-container{
+
+    .img-container {
         height: auto;
-        img{
+
+        img {
             height: 600px;
         }
     }
-    .flex-only{
+
+    .flex-only {
         flex-direction: column-reverse;
         align-items: center;
         margin-left: 100px;
     }
 
-    .my-img-header{
+    .my-img-header {
         margin: 0;
     }
 
-    .first-blue-ball{
+    .first-blue-ball {
         width: 1000px;
     }
 }
 
-@media (max-width:950px){
-    .first-blue-ball{
+@media (max-width:950px) {
+    .first-blue-ball {
         width: 950px;
     }
 }
 
-@media (max-width:650px){
-    .first-blue-ball{
+@media (max-width:650px) {
+    .first-blue-ball {
         width: 800px;
     }
-    .flex{
+
+    .flex {
         margin: 0;
         margin-left: 24px;
     }
-    .posi-header-text{
-        h1{
-           font-size: 70px; 
+
+    .posi-header-text {
+        h1 {
+            font-size: 70px;
         }
-        p{
+
+        p {
             font-size: 32px;
         }
     }
 }
 
-@media (max-width:450px){
-    .flex-only{
+@media (max-width:450px) {
+    .flex-only {
         margin: 0;
     }
-    .posi-header-text{
+
+    .posi-header-text {
         height: 30%;
-        
+
     }
-    .img-container{
+
+    .img-container {
         height: 70%;
         justify-content: center;
-        img{
-            
+
+        img {
+
             height: 100%;
         }
-        
+
     }
 }
 
-@media (max-width:400px){
-    .posi-header-text{
-        h1{
-           font-size: 62px; 
+@media (max-width:400px) {
+    .posi-header-text {
+        h1 {
+            font-size: 62px;
         }
-        p{
+
+        p {
             font-size: 24px;
         }
     }

@@ -6,20 +6,33 @@ import { ViewportScroller } from "@angular/common";
   styleUrls: ['./startscreen.component.scss']
 })
 export class StartscreenComponent implements OnInit {
-
+  mobilemenu=true;
   constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
   }
 
-  goToAboutMe(){
-    this.scroller.scrollToAnchor("aboutMe");
-  }
-  goToSkillSet(){
-    this.scroller.scrollToAnchor("skillSet");
+  goToAboutMe(event:any){
+    this.scroller.scrollToAnchor(event);
   }
 
-  goToMyWork(){
-    this.scroller.scrollToAnchor("myWork");
+  goToMobileMe(event:any){
+    this.scroller.scrollToAnchor(event);
+    document.getElementById('mobileMenu')?.classList.add('dnone');
+      this.mobilemenu=true;
   }
+
+  openMobileMenu(){
+    if(this.mobilemenu){
+      document.getElementById('mobileMenu')?.classList.remove('dnone');
+      this.mobilemenu=false; 
+    }
+    else{
+      document.getElementById('mobileMenu')?.classList.add('dnone');
+      this.mobilemenu=true; 
+    }
+  
+  }
+  
 }
+

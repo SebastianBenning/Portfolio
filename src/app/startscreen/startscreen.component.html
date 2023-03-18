@@ -7,9 +7,22 @@
             <p>Sebastian</p>
         </div>
         <div class="header-links">
-            <p (click)="goToAboutMe()">About me</p>
-            <p (click)="goToSkillSet()">Skills set</p>
-            <p (click)="goToMyWork()">My work</p>
+            <p (click)="goToAboutMe('aboutMe')">About me</p>
+            <p (click)="goToAboutMe('skillSet')">Skills set</p>
+            <p (click)="goToAboutMe('myWork')">My work</p>
+        </div>
+        <div class="row d-none" >
+            <input type="checkbox" id="hamburg">
+            <label for="hamburg" class="hamburg" (click)="openMobileMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+        </div>
+        <div id="mobileMenu" class="mobile-links dnone animationFadeInRight">
+            <p (click)="goToMobileMe('aboutMe')">About me</p>
+            <p (click)="goToMobileMe('skillSet')">Skills set</p>
+            <p (click)="goToMobileMe('myWork')">My work</p>
         </div>
     </div>
     <div class="flex-only start-img  ma-re">

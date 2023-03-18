@@ -59,6 +59,9 @@
         &:hover{
             box-shadow: 0 0 0 1px #5988FF;  
         }
+        &:focus{
+            outline: none;
+        }
     }
 
     textarea {
@@ -74,6 +77,9 @@
         cursor: pointer;
         &:hover{
             box-shadow: 0 0 0 1px #5988FF;   
+        }
+        &:focus{
+            outline: none;
         }
     }
 
