@@ -11,7 +11,7 @@ import { JoinComponent } from './join/join.component';
 import { SharkieComponent } from './sharkie/sharkie.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import {  RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [

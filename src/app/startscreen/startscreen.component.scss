@@ -71,6 +71,9 @@ label.hamburg {
     margin-right: auto;
     border-radius: 4px;
     cursor: pointer;
+    &:hover{
+        background-color:rgba(234, 240, 255, 1);
+    }
 }
 
 input#hamburg {
@@ -200,8 +203,32 @@ input#hamburg {
     width: 500px;
     height: 100vh;
     background: rgb(234, 240, 255);
-    background: linear-gradient(0deg, rgba(234, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(234, 240, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
     
+}
+
+.bluecolor{
+    background: #5988FF !important;
+}
+
+.mobile-p-tek{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 23px;
+        color: #5988FF;
+        margin: 0;
+        height: 60px;
+        margin: 20px;
+        cursor: pointer;
+        &:hover {
+            font-size: 26px;
+        }
+    }
 }
 
 .animationFadeInRight {
@@ -275,6 +302,7 @@ input#hamburg {
     }
 }
 
+
 @media (max-width:1300px) {
     .posi-header-text {
         h1 {
@@ -331,7 +359,7 @@ input#hamburg {
 
     .posi-header-text {
         height: auto;
-
+        height: 40%;
         h1 {
             color: white;
             font-size: 100px;
@@ -343,10 +371,10 @@ input#hamburg {
     }
 
     .img-container {
-        height: auto;
+        height: 60%;
 
         img {
-            height: 600px;
+            height: 100%;
         }
     }
 
@@ -374,6 +402,10 @@ input#hamburg {
 @media (max-width:650px) {
     .first-blue-ball {
         width: 800px;
+    }
+
+    .line{
+        background-color: white;
     }
 
     .flex {

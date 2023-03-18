@@ -11,18 +11,21 @@
             <p (click)="goToAboutMe('skillSet')">Skills set</p>
             <p (click)="goToAboutMe('myWork')">My work</p>
         </div>
-        <div class="row d-none" >
+        <div class="row d-none">
             <input type="checkbox" id="hamburg">
             <label for="hamburg" class="hamburg" (click)="openMobileMenu()">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+                <span id="lines" class="line"></span>
+                <span id="lines1" class="line"></span>
+                <span id="lines2" class="line"></span>
             </label>
         </div>
         <div id="mobileMenu" class="mobile-links dnone animationFadeInRight">
-            <p (click)="goToMobileMe('aboutMe')">About me</p>
-            <p (click)="goToMobileMe('skillSet')">Skills set</p>
-            <p (click)="goToMobileMe('myWork')">My work</p>
+            <div class="mobile-p-tek">
+                <p (click)="goToMobileMe('aboutMe')">About me</p>
+                <p (click)="goToMobileMe('skillSet')">Skills set</p>
+                <p (click)="goToMobileMe('myWork')">My work</p>
+                <p (click)="goToMobileMe('contactStart')">Contact</p>
+            </div>
         </div>
     </div>
     <div class="flex-only start-img  ma-re">

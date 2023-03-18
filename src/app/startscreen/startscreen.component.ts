@@ -25,10 +25,16 @@ export class StartscreenComponent implements OnInit {
   openMobileMenu(){
     if(this.mobilemenu){
       document.getElementById('mobileMenu')?.classList.remove('dnone');
+      document.getElementById('lines')?.classList.add('bluecolor');
+      document.getElementById('lines1')?.classList.add('bluecolor');
+      document.getElementById('lines2')?.classList.add('bluecolor');
       this.mobilemenu=false; 
     }
     else{
       document.getElementById('mobileMenu')?.classList.add('dnone');
+      document.getElementById('lines')?.classList.remove('bluecolor');
+      document.getElementById('lines1')?.classList.remove('bluecolor');
+      document.getElementById('lines2')?.classList.remove('bluecolor');
       this.mobilemenu=true; 
     }
   
