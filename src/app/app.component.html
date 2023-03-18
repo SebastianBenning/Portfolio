@@ -1,7 +1,9 @@
 <div class="change-language">
-    Change Language : <select #selLang (change)="translateLanguageTo(selLang.value)">
+    <!-- Language : <select #selLang (change)="translateLanguageTo(selLang.value)">
         <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
-    </select>
+    </select> -->
+    <img id="flag" (click)="translateLanguageTo()" src="/assets/img/germany.png" alt="">
+    
 </div>
 <app-startscreen></app-startscreen>
 <app-aboutme></app-aboutme>

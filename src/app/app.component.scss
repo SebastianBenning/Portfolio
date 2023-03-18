@@ -1,6 +1,26 @@
 .change-language{
     z-index: 99;
     position: absolute;
-    top: 50px;
-    left: 350px;
+    top: 35px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    img{
+        height: 40px;
+    }
+    &:hover{
+        scale: (1.1);
+    }
+}
+
+@media (max-width:1200px){
+    .change-language{
+        right: 200px;
+    }
+}
+
+@media (max-width:650px){
+    .change-language{
+        right: 100px;
+    }
 }

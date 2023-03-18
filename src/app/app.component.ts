@@ -7,6 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  flag=true;
   constructor(
     public translate: TranslateService
   ){
@@ -15,7 +16,18 @@ export class AppComponent {
     // Set default language
     translate.setDefaultLang('en');
   }
-  translateLanguageTo(lang: string) {
-    this.translate.use(lang);
+  translateLanguageTo() {
+    if (this.flag) {
+      this.translate.use('de');
+      let flage = document.getElementById("flag") as HTMLImageElement;
+      flage.src ="/assets/img/united-kingdom.png";
+      this.flag=false;
+    }
+    else{
+      this.translate.use('en');
+      let flage = document.getElementById("flag") as HTMLImageElement;
+      flage.src ="/assets/img/germany.png";
+      this.flag=true;
+    }
   }
 }

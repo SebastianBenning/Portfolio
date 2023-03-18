@@ -72,7 +72,11 @@ label.hamburg {
     border-radius: 4px;
     cursor: pointer;
     &:hover{
-        background-color:rgba(234, 240, 255, 1);
+        
+        .line{
+            height: 5px;
+            width: 53px;
+        }
     }
 }
 
@@ -84,11 +88,11 @@ input#hamburg {
     position: absolute;
     left: 10px;
     height: 4px;
-    width: 55px;
+    width: 50px;
     background: #5988FF;
     border-radius: 2px;
     display: block;
-    transition: 0.5s;
+    transition: 0.2s;
     transform-origin: center;
 }
 
@@ -104,17 +108,6 @@ input#hamburg {
     top: 36px;
 }
 
-// #hamburg:checked+.hamburg .line:nth-child(1) {
-//     transform: translateY(12px) rotate(-45deg);
-// }
-
-// #hamburg:checked+.hamburg .line:nth-child(2) {
-//     opacity: 0;
-// }
-
-// #hamburg:checked+.hamburg .line:nth-child(3) {
-//     transform: translateY(-12px) rotate(45deg);
-// }
 
 .first-blue-ball {
     width: 900px;
@@ -134,14 +127,17 @@ input#hamburg {
     z-index: 10;
     display: flex;
     cursor: pointer;
-
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
     p {
+        width: 180px;
         color: #5988FF;
         font-size: 23px;
         text-decoration: none;
         font-family: 'Montserrat';
-        margin-left: 32px;
-        margin-right: 32px;
+        text-align: center;
+        
 
         &:hover {
             font-weight: bold;
@@ -396,6 +392,12 @@ input#hamburg {
 @media (max-width:950px) {
     .first-blue-ball {
         width: 950px;
+    }
+}
+
+@media (max-width:800px){
+    .line{
+        background-color: white;
     }
 }
 
