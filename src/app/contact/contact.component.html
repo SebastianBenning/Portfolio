@@ -3,7 +3,9 @@
         <div class="contact-text ma-le">
             <h2>{{'CONTACT.NAME' | translate}}</h2>
             <h3>{{'CONTACT.PROBLEM' | translate}}</h3>
-            <span>{{'CONTACT.TEXT' | translate}}</span>
+            <span>{{'CONTACT.TEXT' | translate}} <br>
+                {{'CONTACT.TEXT1' | translate}} <br>
+                {{'CONTACT.TEXT2' | translate}}</span>
             <p>{{'CONTACT.NEED' | translate}}</p>
             <div class="contact-bigball">
                 <img src="/assets/img/Ellipse.png" alt="">
@@ -13,15 +15,16 @@
             <form action="">
                 <input type="text" placeholder="{{'CONTACT.PLACENAME' | translate}}">
                 <input type="text" placeholder="{{'CONTACT.PLACEMAIL' | translate}}">
-                <textarea name="" id="" cols="30" rows="10" placeholder="{{'CONTACT.PLACETEXT' | translate}}"></textarea>
+                <textarea name="" id="" cols="30" rows="10"
+                    placeholder="{{'CONTACT.PLACETEXT' | translate}}"></textarea>
                 <div class="button-contact">
                     <button>{{'CONTACT.PLACEBUTTON' | translate}}</button>
                 </div>
             </form>
-            
+
         </div>
     </div>
-    <div class="goup-image ma-re ma-le" (click)="onActivate($event)" >
-        
+    <div class="goup-image ma-re ma-le" (click)="onActivate($event)">
+
     </div>
 </div>
