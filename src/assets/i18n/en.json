@@ -1,0 +1,27 @@
+{
+    "TITLE": "Hello! I am Sebastian",
+    "LINKS":{
+        "ABOUTME":"About me",
+        "SKILLSET":"Skill set",
+        "MYWORK":"My Work",
+        "CONTACT":"Contact"
+    },
+    "ME":{
+        "TITLE":"Let's work together",
+        "TEXT":"I am a Front-end developer based in Willstätt, Baden-Würtemberg. <br> I enjay helping designers  and campaniesbring their ideas into real life. <br> I am looking forward to continuing my developer position. <br> <br>If youthinkI'd be a good match for your projects, contact me !"
+    },
+    "MESSAGE":"Send a message",
+    "MYWORKTEXT":"This page is a sample of my work - please feel free to <br> try them out",
+    "JOINTEXT":"Task manager inspired by the Kanban System. Create and <br> organize tasks using drag and drop functions, assignusers and <br> categories",
+    "SHARKIETEXT":"A simle Jump and run  game based on object-oriented approach. <br> Help sharkie to find coins and poison bottles tofight  against the killer whale.",
+    "CONTACT":{
+        "NAME":"Contact",
+        "PROBLEM":"Got a problem to solve?",
+        "TEXT":"Contact me trough this form, i am interested in hearing <br> you, knowing your ideas and contributing to your projects <br> with my work.",
+        "NEED":"Need a Frontend developer? <b>Contact me!",
+        "PLACENAME":"Your name",
+        "PLACEMAIL":"Your email",
+        "PLACETEXT":"Your message",
+        "PLACEBUTTON":"Say hello ;)"
+    }
+}

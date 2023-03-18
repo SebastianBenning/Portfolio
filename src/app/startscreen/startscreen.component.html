@@ -7,9 +7,9 @@
             <p>Sebastian</p>
         </div>
         <div class="header-links">
-            <p (click)="goToAboutMe('aboutMe')">About me</p>
-            <p (click)="goToAboutMe('skillSet')">Skills set</p>
-            <p (click)="goToAboutMe('myWork')">My work</p>
+            <p (click)="goToAboutMe('aboutMe')">{{'LINKS.ABOUTME' | translate}}</p>
+            <p (click)="goToAboutMe('skillSet')">{{'LINKS.SKILLSET' | translate}}</p>
+            <p (click)="goToAboutMe('myWork')">{{'LINKS.MYWORK' | translate}}</p>
         </div>
         <div class="row d-none">
             <input type="checkbox" id="hamburg">
@@ -21,10 +21,10 @@
         </div>
         <div id="mobileMenu" class="mobile-links dnone animationFadeInRight">
             <div class="mobile-p-tek">
-                <p (click)="goToMobileMe('aboutMe')">About me</p>
-                <p (click)="goToMobileMe('skillSet')">Skills set</p>
-                <p (click)="goToMobileMe('myWork')">My work</p>
-                <p (click)="goToMobileMe('contactStart')">Contact</p>
+                <p (click)="goToMobileMe('aboutMe')">{{'LINKS.ABOUTME' | translate}}</p>
+                <p (click)="goToMobileMe('skillSet')">{{'LINKS.SKILLSET' | translate}}</p>
+                <p (click)="goToMobileMe('myWork')">{{'LINKS.MYWORK' | translate}}</p>
+                <p (click)="goToMobileMe('contactStart')">{{'LINKS.CONTACT' | translate}}</p>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="img-container"><img class="my-img-header" src="/assets/img/mein_bild.png" alt=""></div>
         <div class="posi-header-text">
             <div>
-                <p>Hello! I am Sebastian</p>
+                <p>{{'TITLE' | translate}}</p>
                 <h1>FRONTEND<br>DEVELOPER</h1>
             </div>
             <div class="scroll-icon">

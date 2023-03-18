@@ -1,0 +1,27 @@
+{
+    "TITLE": "Hallo! Ich bin Sebastian",
+    "LINKS":{
+        "ABOUTME":"Über mich",
+        "SKILLSET":"Fähigkeiten",
+        "MYWORK":"Meine Arbeit",
+        "CONTACT":"Kontakt"
+    },
+    "ME":{
+        "TITLE":"Lass uns zusammen arbeiten",
+        "TEXT":"Ich bin Frontend-Entwickler aus Willstätt, Baden-Württemberg. <br> Ich genieße es, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. <br> Ich freue mich darauf, meine Position als Entwickler fortzusetzen. <br> <br>Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich !"
+    },
+    "MESSAGE":"Nachricht senden",
+    "MYWORKTEXT":"Diese Seite ist ein Beispiel meiner Arbeit. Sie können sie gerne <br> ausprobieren",
+    "JOINTEXT":"Vom Kanban-System inspirierter Task-Manager. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und <br> Kategorien zu",
+    "SHARKIETEXT":"Ein einfaches Jump and Run-Spiel, das auf einem objektorientierten Ansatz basiert. <br> Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+    "CONTACT":{
+        "NAME":"Kontakt",
+        "PROBLEM":"Haben Sie ein Problem zu lösen?",
+        "TEXT":"Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, <br> Sie zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "NEED":"Brauchen Sie einen Frontend-developer? <b>Kontaktieren Sie mich!",
+        "PLACENAME":"Dein Name",
+        "PLACEMAIL":"Deine Email",
+        "PLACETEXT":"Deine Nachricht",
+        "PLACEBUTTON":"Sag Hallo ;)"
+    }
+}

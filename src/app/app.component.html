@@ -1,3 +1,8 @@
+<div class="change-language">
+    Change Language : <select #selLang (change)="translateLanguageTo(selLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+    </select>
+</div>
 <app-startscreen></app-startscreen>
 <app-aboutme></app-aboutme>
 <app-skillset></app-skillset>

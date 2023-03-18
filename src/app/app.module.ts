@@ -11,7 +11,14 @@ import { JoinComponent } from './join/join.component';
 import { SharkieComponent } from './sharkie/sharkie.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+// Factory function required during AOT compilation
+export function httpTranslateLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -27,6 +34,14 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     AppRoutingModule,
   ],
   providers: [],

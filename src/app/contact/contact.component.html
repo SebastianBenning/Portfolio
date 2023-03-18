@@ -1,22 +1,21 @@
 <div class="contact-background" id="contactStart">
     <div class="contact-main  ">
         <div class="contact-text ma-le">
-            <h2>Contact</h2>
-            <h3>Got a problem to solve?</h3>
-            <span>Contact me trough this form, i am interested in hearing <br> you, knowing your ideas and contributing
-                to your projects <br> with my work.</span>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+            <h2>{{'CONTACT.NAME' | translate}}</h2>
+            <h3>{{'CONTACT.PROBLEM' | translate}}</h3>
+            <span>{{'CONTACT.TEXT' | translate}}</span>
+            <p>{{'CONTACT.NEED' | translate}}</p>
             <div class="contact-bigball">
                 <img src="/assets/img/Ellipse.png" alt="">
             </div>
         </div>
         <div class="contact-input ma-re">
             <form action="">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="text" placeholder="{{'CONTACT.PLACENAME' | translate}}">
+                <input type="text" placeholder="{{'CONTACT.PLACEMAIL' | translate}}">
+                <textarea name="" id="" cols="30" rows="10" placeholder="{{'CONTACT.PLACETEXT' | translate}}"></textarea>
                 <div class="button-contact">
-                    <button>Say hello ;)</button>
+                    <button>{{'CONTACT.PLACEBUTTON' | translate}}</button>
                 </div>
             </form>
             
