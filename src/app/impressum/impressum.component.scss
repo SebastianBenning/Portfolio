@@ -1,5 +1,7 @@
 .impressum-main{
-    height: 100vh;
+    height: calc(100vh - 301px);
     width: 100vw;
-    background-color: aqua;
+    background-color: white;
+    margin: 0;
+    margin-left: 30px;
 }
