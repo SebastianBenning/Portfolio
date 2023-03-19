@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { MainComponent } from './main/main.component';
 
 // Factory function required during AOT compilation
 export function httpTranslateLoaderFactory(http: HttpClient) {
@@ -30,7 +32,9 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     JoinComponent,
     SharkieComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImpressumComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

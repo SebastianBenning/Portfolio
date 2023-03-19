@@ -52,11 +52,11 @@
     z-index: 9;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
-.dnone{
+.dnone {
     display: none;
 }
 
@@ -71,9 +71,10 @@ label.hamburg {
     margin-right: auto;
     border-radius: 4px;
     cursor: pointer;
-    &:hover{
-        
-        .line{
+
+    &:hover {
+
+        .line {
             height: 5px;
             width: 53px;
         }
@@ -116,11 +117,16 @@ input#hamburg {
 .header-text {
     z-index: 10;
 
+    span {
+        color: orange;
+        font-size: 60px;
+    }
+
     p {
         margin: 0;
         font-size: 40px;
+        color: white;
     }
-
 }
 
 .header-links {
@@ -130,6 +136,7 @@ input#hamburg {
     width: 500px;
     display: flex;
     justify-content: space-around;
+
     p {
         width: 180px;
         color: #5988FF;
@@ -137,7 +144,7 @@ input#hamburg {
         text-decoration: none;
         font-family: 'Montserrat';
         text-align: center;
-        
+
 
         &:hover {
             font-weight: bold;
@@ -191,7 +198,7 @@ input#hamburg {
 
 }
 
-.mobile-links{
+.mobile-links {
     z-index: 15;
     position: absolute;
     right: 0;
@@ -200,27 +207,29 @@ input#hamburg {
     height: 100vh;
     background: rgb(234, 240, 255);
     background: linear-gradient(0deg, rgba(234, 240, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
-    
+
 }
 
-.bluecolor{
+.bluecolor {
     background: #5988FF !important;
 }
 
-.mobile-p-tek{
+.mobile-p-tek {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    p{
+
+    p {
         font-size: 23px;
         color: #5988FF;
         margin: 0;
         height: 60px;
         margin: 20px;
         cursor: pointer;
+
         &:hover {
             font-size: 26px;
         }
@@ -325,9 +334,10 @@ input#hamburg {
 }
 
 @media (max-width:1200px) {
-    .d-none{
+    .d-none {
         display: block;
-    }    
+    }
+
     .img-container {
         z-index: 10;
         height: 100%;
@@ -356,6 +366,7 @@ input#hamburg {
     .posi-header-text {
         height: auto;
         height: 40%;
+
         h1 {
             color: white;
             font-size: 100px;
@@ -395,8 +406,8 @@ input#hamburg {
     }
 }
 
-@media (max-width:800px){
-    .line{
+@media (max-width:800px) {
+    .line {
         background-color: white;
     }
 }
@@ -406,7 +417,7 @@ input#hamburg {
         width: 800px;
     }
 
-    .line{
+    .line {
         background-color: white;
     }
 

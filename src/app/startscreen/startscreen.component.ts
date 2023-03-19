@@ -22,22 +22,18 @@ export class StartscreenComponent implements OnInit {
       this.mobilemenu=true;
   }
 
-  openMobileMenu(){
-    if(this.mobilemenu){
-      document.getElementById('mobileMenu')?.classList.remove('dnone');
-      document.getElementById('lines')?.classList.add('bluecolor');
-      document.getElementById('lines1')?.classList.add('bluecolor');
-      document.getElementById('lines2')?.classList.add('bluecolor');
-      this.mobilemenu=false; 
+  toggleMobileMenu(): void {
+    this.mobilemenu = !this.mobilemenu;
+    this.toggleMobileMenuClass(!this.mobilemenu);
+  }
+
+  toggleMobileMenuClass(open: boolean): void {
+    let mobileMenu = document.getElementById('mobileMenu');
+    let lines = document.querySelectorAll('#lines, #lines1, #lines2');
+    if (mobileMenu && lines) {
+      mobileMenu.classList.toggle('dnone', open);
+      lines.forEach((line) => line.classList.toggle('bluecolor', !open));
     }
-    else{
-      document.getElementById('mobileMenu')?.classList.add('dnone');
-      document.getElementById('lines')?.classList.remove('bluecolor');
-      document.getElementById('lines1')?.classList.remove('bluecolor');
-      document.getElementById('lines2')?.classList.remove('bluecolor');
-      this.mobilemenu=true; 
-    }
-  
   }
   
 }
