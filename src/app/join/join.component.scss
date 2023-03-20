@@ -50,6 +50,7 @@
         position: relative;
         transition: all 0.2s;
         cursor: pointer;
+
         &:before {
             content: "";
             position: absolute;
@@ -83,6 +84,7 @@
     box-shadow: 5px 5px 12px -6px rgba(0, 0, 0, 0.66);
     transition: all 0.2s;
     cursor: pointer;
+
     &:hover {
         scale: (1.1);
     }
@@ -104,9 +106,11 @@
         justify-content: center;
         align-items: center;
         margin: 0;
-        p{
+
+        p {
             text-align: left;
         }
+
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -123,8 +127,13 @@
     .image-work {
         width: 90%;
     }
-    .img-container{
-        display: flex;
-        justify-content: center;
+
+    .img-container {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     }
 }

@@ -32,5 +32,13 @@
         "PLACEMAIL":"Your email",
         "PLACETEXT":"Your message",
         "PLACEBUTTON":"Say hello ;)"
-    }
+    },
+    "IMPRESS":{
+        "FIRST":"Information according to § 5 TMG",
+        "CONTACT":"Contact",
+        "PHONE":"Phone",
+        "CONSUMER":"Consumer dispute resolution/universal arbitration board",
+        "CONSUMERTEXT":"We are not willing or obliged to participate in dispute settlement procedures before a consumer arbitration board.",
+        "BACK":"Back"
+    } 
 }

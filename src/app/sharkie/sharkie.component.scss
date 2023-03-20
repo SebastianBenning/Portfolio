@@ -140,9 +140,13 @@
     .image-work {
         width: 90%;
     }
-    .img-container{
-        display: flex;
-        justify-content: center;
+    .image-content {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     }
     .half-ball-right{
         display: none;

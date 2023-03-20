@@ -32,5 +32,13 @@
         "PLACEMAIL":"Deine Email",
         "PLACETEXT":"Deine Nachricht",
         "PLACEBUTTON":"Sag Hallo ;)"
-    }
+    },
+    "IMPRESS":{
+        "FIRST":"Angaben gemäß § 5 TMG",
+        "CONTACT":"Kontakt",
+        "PHONE":"Telefon",
+        "CONSUMER":"Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+        "CONSUMERTEXT":"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelleteilzunehmen.",
+        "BACK":"Zurück"
+    }   
 }
