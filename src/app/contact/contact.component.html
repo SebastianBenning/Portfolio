@@ -12,13 +12,12 @@
             </div>
         </div>
         <div class="contact-input ma-re">
-            <form action="">
-                <input type="text" required placeholder="{{'CONTACT.PLACENAME' | translate}}">
-                <input type="email" required placeholder="{{'CONTACT.PLACEMAIL' | translate}}">
-                <textarea name="" required id="" cols="30" rows="10"
-                    placeholder="{{'CONTACT.PLACETEXT' | translate}}"></textarea>
+            <form  (submit)="sendMail()" ngNativeValidate #myForm>
+                <input type="text" name="name" required placeholder="{{'CONTACT.PLACENAME' | translate}}" #nameField>
+                <input type="email" email="email" required placeholder="{{'CONTACT.PLACEMAIL' | translate}}" #mailField>
+                <textarea name="message"  required id="" cols="30" rows="10"placeholder="{{'CONTACT.PLACETEXT' | translate}}" #textField></textarea>
                 <div class="button-contact">
-                    <button>{{'CONTACT.PLACEBUTTON' | translate}}</button>
+                    <button #sendButton>{{'CONTACT.PLACEBUTTON' | translate}}</button>
                 </div>
             </form>
 

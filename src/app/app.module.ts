@@ -16,7 +16,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainComponent } from './main/main.component';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 // Factory function required during AOT compilation
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -46,6 +47,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [],
