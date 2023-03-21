@@ -12,15 +12,20 @@
             </div>
         </div>
         <div class="contact-input ma-re">
-            <form  (submit)="sendMail()" ngNativeValidate #myForm>
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
                 <input type="text" name="name" required placeholder="{{'CONTACT.PLACENAME' | translate}}" #nameField>
                 <input type="email" email="email" required placeholder="{{'CONTACT.PLACEMAIL' | translate}}" #mailField>
-                <textarea name="message"  required id="" cols="30" rows="10"placeholder="{{'CONTACT.PLACETEXT' | translate}}" #textField></textarea>
+                <textarea name="message" required id="" cols="30" rows="10"
+                    placeholder="{{'CONTACT.PLACETEXT' | translate}}" #textField></textarea>
                 <div class="button-contact">
                     <button #sendButton>{{'CONTACT.PLACEBUTTON' | translate}}</button>
                 </div>
             </form>
-
+            <div id="request" class=" d-none request-main ">
+                <div class="request animationFadeInbottom">
+                    <p>{{'REQUEST' | translate}}</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="goup-image ma-re ma-le" (click)="onActivate($event)">

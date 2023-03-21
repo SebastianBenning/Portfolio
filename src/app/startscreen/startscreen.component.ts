@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from "@angular/common";
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-startscreen',
   templateUrl: './startscreen.component.html',
@@ -7,8 +8,13 @@ import { ViewportScroller } from "@angular/common";
 })
 export class StartscreenComponent implements OnInit {
   mobilemenu=true;
-  constructor(private scroller: ViewportScroller) { }
-
+  constructor(private scroller: ViewportScroller, public translate: TranslateService) { 
+    // Register translation languages
+    translate.addLangs(['en', 'de']);
+    // Set default language
+    translate.setDefaultLang('en');
+  }
+  flag=true;
   ngOnInit(): void {
   }
 
@@ -18,21 +24,36 @@ export class StartscreenComponent implements OnInit {
 
   goToMobileMe(event:any){
     this.scroller.scrollToAnchor(event);
-    document.getElementById('mobileMenu')?.classList.add('dnone');
-      this.mobilemenu=true;
+    this.toggleMobileMenu();
   }
 
   toggleMobileMenu(): void {
     this.mobilemenu = !this.mobilemenu;
-    this.toggleMobileMenuClass(!this.mobilemenu);
+    this.toggleMobileMenuClass();
   }
 
-  toggleMobileMenuClass(open: boolean): void {
+  toggleMobileMenuClass(): void {
     let mobileMenu = document.getElementById('mobileMenu');
     let lines = document.querySelectorAll('#lines, #lines1, #lines2');
-    if (mobileMenu && lines) {
-      mobileMenu.classList.toggle('dnone', open);
-      lines.forEach((line) => line.classList.toggle('bluecolor', !open));
+    if (mobileMenu && lines) {     
+      mobileMenu.classList.toggle('dnone', this.mobilemenu);
+      lines.forEach((line) => line.classList.toggle('bluecolor', !this.mobilemenu));
+
+    }
+  }
+
+  translateLanguageTo() {
+    if (this.flag) {
+      this.translate.use('de');
+      let flage = document.getElementById("flag") as HTMLImageElement;
+      flage.src ="/assets/img/united-kingdom.png";
+      this.flag=false;
+    }
+    else{
+      this.translate.use('en');
+      let flage = document.getElementById("flag") as HTMLImageElement;
+      flage.src ="/assets/img/germany.png";
+      this.flag=true;
     }
   }
   

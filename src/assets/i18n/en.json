@@ -40,5 +40,6 @@
         "CONSUMER":"Consumer dispute resolution/universal arbitration board",
         "CONSUMERTEXT":"We are not willing or obliged to participate in dispute settlement procedures before a consumer arbitration board.",
         "BACK":"Back"
-    } 
+    },
+    "REQUEST":"Request sent successfully"
 }

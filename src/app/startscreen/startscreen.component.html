@@ -10,6 +10,9 @@
             <p (click)="goToAboutMe('aboutMe')">{{'LINKS.ABOUTME' | translate}}</p>
             <p (click)="goToAboutMe('skillSet')">{{'LINKS.SKILLSET' | translate}}</p>
             <p (click)="goToAboutMe('myWork')">{{'LINKS.MYWORK' | translate}}</p>
+            <div id="flagcontainer" class="change-language">
+                <img id="flag" (click)="translateLanguageTo()" src="/assets/img/germany.png" alt="">
+            </div>
         </div>
         <div class="row d-none">
             <input type="checkbox" id="hamburg">
@@ -26,6 +29,9 @@
                 <p (click)="goToMobileMe('myWork')">{{'LINKS.MYWORK' | translate}}</p>
                 <p (click)="goToMobileMe('contactStart')">{{'LINKS.CONTACT' | translate}}</p>
             </div>
+            <div id="flagcontainer" class="change-language">
+                <img id="flag" (click)="translateLanguageTo()" src="/assets/img/germany.png" alt="">
+            </div>
         </div>
     </div>
     <div class="flex-only start-img  ma-re">
@@ -41,7 +47,7 @@
             <div class="social-main">
                 <div class="social-left"></div>
                 <div class="social-header">
-                    <a href="https://github.com/SebastianBenning"><img src="assets/img/git.png" href alt=""></a>
+                    <a href="https://github.com/SebastianBenning"><img src="assets/img/git.png" alt=""></a>
                     <img (click)="goToMobileMe('contactStart')" src="assets/img/mail.png" alt="">
                 </div>
             </div>

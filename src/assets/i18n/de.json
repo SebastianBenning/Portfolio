@@ -40,5 +40,6 @@
         "CONSUMER":"Verbraucherstreitbeilegung/Universalschlichtungsstelle",
         "CONSUMERTEXT":"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelleteilzunehmen.",
         "BACK":"Zurück"
-    }   
+    },
+    "REQUEST":"Anfrage erfolgreich gesendet"   
 }

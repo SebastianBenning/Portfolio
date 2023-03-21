@@ -278,6 +278,22 @@ input#hamburg {
     }
 }
 
+.change-language{
+    z-index: 99;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    img{
+        height: 40px;
+    }
+    &:hover{
+        scale: (1.1);
+    }
+}
+
+
 @media (max-width:1600px) {
     .posi-header-text {
         h1 {
@@ -351,6 +367,10 @@ input#hamburg {
 
     .header-links {
         display: none;
+    }
+
+    .change-language{
+        right: 200px;
     }
 }
 
@@ -435,6 +455,10 @@ input#hamburg {
             font-size: 32px;
         }
     }
+
+    .change-language{
+        right: 100px;
+    }
 }
 
 @media (max-width:450px) {
@@ -453,6 +477,10 @@ input#hamburg {
                 font-size: 50px;
             }
         }
+    }
+
+    .mobile-links{
+        width: 100vw;
     }
 
     .img-container {

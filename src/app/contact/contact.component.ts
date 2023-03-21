@@ -44,7 +44,7 @@ export class ContactComponent implements OnInit {
       body:fd
     }
     );
-
+    this.sendPopUp();
     nameField.disabled = false;
     mailField.disabled = false;
     textField.disabled = false;
@@ -52,6 +52,13 @@ export class ContactComponent implements OnInit {
     nameField.value = '';
     mailField.value = '';
     textField.value = '';
+  }
+
+  sendPopUp(){
+    document.getElementById('request')?.classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('request')?.classList.add('d-none');
+    }, 2000);
   }
 }
 
