@@ -43,19 +43,21 @@ export class StartscreenComponent implements OnInit {
   }
 
   translateLanguageTo() {
+    let flage = document.getElementById("flag" ) as HTMLImageElement;
+    let flagemobile = document.getElementById("flagmobile") as HTMLImageElement;
     if (this.flag) {
       this.translate.use('de');
-      let flage = document.getElementById("flag") as HTMLImageElement;
+      flagemobile.src ="/assets/img/united-kingdom.png";
       flage.src ="/assets/img/united-kingdom.png";
       this.flag=false;
     }
     else{
       this.translate.use('en');
-      let flage = document.getElementById("flag") as HTMLImageElement;
+      flagemobile.src ="/assets/img/germany.png";
       flage.src ="/assets/img/germany.png";
       this.flag=true;
     }
   }
-  
+
 }
 

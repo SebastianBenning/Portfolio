@@ -1,9 +1,9 @@
 .impressum-main{
-    height: calc(100vh - 280px);
     width: 90vw;
+    max-width: 100%;
+    min-height: calc(100vh - 280px);
     background-color: white;
     margin: 0;  
-    overflow-y: scroll;
     padding-left: 30px;
     padding-right: 50px;
 }
