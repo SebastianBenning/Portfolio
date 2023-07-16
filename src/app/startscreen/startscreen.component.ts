@@ -12,7 +12,7 @@ export class StartscreenComponent implements OnInit {
     // Register translation languages
     translate.addLangs(['en', 'de']);
     // Set default language
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('de');
   }
   flag=true;
   ngOnInit(): void {
@@ -46,15 +46,15 @@ export class StartscreenComponent implements OnInit {
     let flage = document.getElementById("flag" ) as HTMLImageElement;
     let flagemobile = document.getElementById("flagmobile") as HTMLImageElement;
     if (this.flag) {
-      this.translate.use('de');
-      flagemobile.src ="/assets/img/united-kingdom.png";
-      flage.src ="/assets/img/united-kingdom.png";
-      this.flag=false;
-    }
-    else{
       this.translate.use('en');
       flagemobile.src ="/assets/img/germany.png";
       flage.src ="/assets/img/germany.png";
+      this.flag=false;
+    }
+    else{
+      this.translate.use('de');
+      flagemobile.src ="/assets/img/united-kingdom.png";
+      flage.src ="/assets/img/united-kingdom.png";
       this.flag=true;
     }
   }

@@ -17,6 +17,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DatapoliceComponent } from './datapolice/datapolice.component';
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -33,7 +34,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     ContactComponent,
     FooterComponent,
     ImpressumComponent,
-    MainComponent
+    MainComponent,
+    DatapoliceComponent
   ],
   imports: [
     BrowserModule,
